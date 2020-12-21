@@ -1,0 +1,9 @@
+https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-c05376625
+2008R2 x64 - packet drops
+Being installed 2008 R2 - 11.1.145.30(B)(21 Apr 2017) (cp032105.exe)
+replaced by cp032531.exe, 2018-04-19, 11.1.145.33, but not added to revision chain.
+Former 11.1.145.30 (24 Oct 2016) hard to identify.
+
+
+
+
