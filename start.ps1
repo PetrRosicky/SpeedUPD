@@ -51,7 +51,7 @@ function FldrPreSet([string]$argXX) {
 function GetMisFile([string]$argXX, [string]$argFile) { 
     $DstPath1 = ".\"+$argXX+"\"+$argFile
     If (!(Test-Path $DstPath1)) {
-        $SrcPath1 = "\\xelpg-s-cms0001.xe.abb.com\dlpri\DPs\"+$argXX+"\"+$argFile
+        $SrcPath1 = "\\xelpg-s-cms0001.xxxxxx.com\dlpri\DPs\"+$argXX+"\"+$argFile
         Write-Host "Downloading " $argFile "... `r" -ForegroundColor DarkGray
         Copy-Item $SrcPath1 -Destination $DstPath1
     }
