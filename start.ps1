@@ -1007,7 +1007,7 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 {
   # Relaunch as an elevated process:
   Start-Process powershell.exe "-File",('"{0}"' -f $MyInvocation.MyCommand.Path) -Verb RunAs
-  Write-Host "SUS must run as Admin - child process launched" -ForegroundColor Yellow
+  Write-Host "SpeedUPD must run as Admin - child process launched" -ForegroundColor Yellow
   Start-Sleep -Seconds 10
   exit
 }
@@ -1021,7 +1021,7 @@ $size = $console.WindowSize
 $size.Width = 146
 $size.Height = 76
 $console.WindowSize = $size
-##################################    #sus [SPPXyz] [-f] [-h|-?]
+##################################    #.\start [SPPXyz] [-f] [-h|-?]
 $RootFldr = "C:\cpqsystem"
 $TInstFldr = "C:\compaq"
 If ($args.count -gt 0) { 
@@ -1114,7 +1114,7 @@ If ($ActionHelp -eq 1) {        # No action if unsupported OR help requested
                 Write-Host "`r"
             }
         }
-        Write-Host "Syntax:        .\sus [-h|-?] | [SPP] [-f] [-r]                  " "`r" -ForegroundColor White
+        Write-Host "Syntax:        .\start [-h|-?] | [SPP] [-f] [-r]                  " "`r" -ForegroundColor White
         Write-Host "-h, -?         Display this help screen                            " "`r" -ForegroundColor Yellow
         Write-Host "SPP            Specify SPP to run in automated mode                " "`r" -ForegroundColor Yellow
         Write-Host "-f             Force installation of PCI devices from RDP session  " "`r" -ForegroundColor Yellow
